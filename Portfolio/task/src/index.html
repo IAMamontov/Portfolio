@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <!--<meta charset="utf-8"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>John Doe</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+    </style>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header id="home">
+        <nav>
+            <div class="hamburger" id="myMain_menu">
+                <!--
+                <div class="menu-about"><a href="#about">About me</a></div>
+                <div class="menu-portfolio"><a href="#portfolio">Portfolio</a></div>
+                <div class="menu-contacts"><a href="#contacts">Contacts</a></div>
+                <div class="menu-home"><a href="#home">Home</a></div>
+                -->
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About me</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contacts">Contacts</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+        <h1 class="header-text">John Doe, Developer</h1>
+    </header>
+    <div class="page-about">
+        <section class="about-section" id="about">
+            <div class="my-photo"><img class="img-me" src="assets/webrtc-set-peripherals-en.png" alt="Photo of me"></div>
+            <div class="about-me">
+                <h2>About me</h2>
+                <p>
+                    Hi, I'm John Doe. I've been student-developer for 9 months now.<br>
+                    For me, programming is not just a job, it's a hobby.<br>
+                    I'm open to new knowledge. I like to study new technologies and apply them in practice.<br>
+                    <b>Skills</b>: Python, Kotlin, CSS<br>
+                </p>
+            </div>
+
+        </section>
+    </div>
+    <div class="page-portfolio">
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <img class="img-portfolio" src="assets/fl_cards.png" alt="Flashcards photo">
+            <!--<p>Flashcards</p>-->
+            <button class="open-window" data-window-target="#window">Flashcards</button>
+            <div class="window" id="window">
+                <div class="window-header">
+                    <h2>Flashcards</h2>
+                </div>
+                <div class="window-body">
+                    This is first project. This is first project.
+                    This is first project. This is first project.
+                    This is first project. This is first project.
+                    This is first project. This is first project.
+                    This is first project. This is first project.
+                    This is first project. This is first project.
+                    This is first project. This is first project.
+                    This is first project. This is first project.
+                </div>
+                <div class="window-footer">
+                    <button data-close-button class="close-button">Close</button>
+                </div>
+            </div>
+            <div id="overlay"></div>
+        </section>
+    </div>
+    <div class="page">
+        <section id="contacts">
+            <h2>Contacts</h2>
+            <p>Tel: +12223334455<br></p>
+        </section>
+    </div>
+    <footer>
+        <p>© 2021 John Doe</p>
+    </footer>
+</body>
+</html>
